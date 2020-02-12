@@ -10,6 +10,7 @@
 <p id="a2"></p>
   <p id="a3"></p>
   <p id="a4"></p>
+  <p id="a5"></p>
 <script> 
   function myFunction(p1, p2) {
   return p1 * p2;
@@ -30,6 +31,13 @@ var person = {firstName:"Kahner", lastName:"Cleveland", age:21, eyeColor:"blue"}
 // Display some data from the object:
 document.getElementById("a4").innerHTML =
 person.firstName + " is " + person.age + " years old."; 
+  
+  var text = "";
+var i;
+for (i = 0; i < 20; i++) {
+  text += "The number is " + i + "<br>";
+}
+document.getElementById("a5").innerHTML = text;
 </script>
 
 </body>
