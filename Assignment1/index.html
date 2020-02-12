@@ -11,6 +11,7 @@
   <p id="a3"></p>
   <p id="a4"></p>
   <p id="a5"></p>
+   <p id="a6"></p>
 <script> 
   function myFunction(p1, p2) {
   return p1 * p2;
@@ -38,6 +39,17 @@ for (i = 0; i < 20; i++) {
   text += "The number is " + i + "<br>";
 }
 document.getElementById("a5").innerHTML = text;
+  
+  function myFunction() {
+  var hour = new Date().getHours(); 
+  var greeting;
+  if (hour < 16) {
+    greeting = "Have a great day";
+  } else {
+    greeting = "Have a good rest of your night";
+  }
+  document.getElementById("a6").innerHTML = greeting;
+}
 </script>
 
 </body>
