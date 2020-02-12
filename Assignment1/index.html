@@ -9,7 +9,7 @@
 <p id="a1"></p>
 <p id="a2"></p>
   <p id="a3"></p>
-  
+  <p id="a4"></p>
 <script> 
   function myFunction(p1, p2) {
   return p1 * p2;
@@ -23,6 +23,13 @@ var animals = [
   "Frog"
 ];
 document.getElementById("a3").innerHTML = animals;
+  
+ // Create an object:
+var person = {firstName:"Kahner", lastName:"Cleveland", age:21, eyeColor:"blue"};
+
+// Display some data from the object:
+document.getElementById("a4").innerHTML =
+person.firstName + " is " + person.age + " years old."; 
 </script>
 
 </body>
