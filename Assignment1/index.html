@@ -134,9 +134,17 @@ document.getElementById("a5").innerHTML = text;
   }
   document.getElementById("a6").innerHTML = greeting;
 }
+  function myFunction() {
+  var person = prompt("Please enter your name", "Joe Brown");
+  if (person != null) {
+    document.getElementById("a7").innerHTML =
+    "Hello " + person + "! How are you today?";
+  }
+}
 </script>
 
   <button onclick="myFunction()">Click me</button>
+  <button onclick="myFunction()">Try it</button>
 
   </body>
 </html> 
