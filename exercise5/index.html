@@ -27,6 +27,8 @@
     <div id='map'></div>
     
     <br>Pan to <a href="javascript:Ames()">Ames, IA</a><br>
+    <br>Pan to <a href="javascript:Design College()">Design College</a><br>
+    <br>Pan to <a href="javascript:Agronomy Hall()">Agronomy Hall</a><br>
 
     <script>
         var map = L.map('map').setView([42.0, -93.634], 15);
@@ -55,6 +57,13 @@
         function Ames() {
             map.panTo(new L.LatLng(42.03078, -93.63191));
             
+             //Pan to Design College
+        function Design College() {
+            map.panTo(new L.LatLng(42.0286,-93.6532));
+            
+             //Pan to Agronomy Hall
+        function Agronomy Hall() {
+            map.panTo(new L.LatLng(42.0283,-93.6423));
         };
         
         
