@@ -45,6 +45,12 @@ var latlngs = [[36, -109.05],[40, -109.03],[41, -102.05],[39, -102.04]];
 var polygon = L.polygon(latlngs, {color: 'red'}).addTo(map);
            L.marker([42.0283, -93.6423]).addTo(map)
             .bindPopup("Agronomy Hall");
+        var nexrad = L.tileLayer.wms("http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi", {
+    layers: 'nexrad-n0r-900913',
+    format: 'image/png',
+    transparent: true,
+    attribution: "Weather data © 2012 IEM Nexrad"
+});
 
     </script>
 
