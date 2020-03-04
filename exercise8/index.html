@@ -14,7 +14,7 @@
         crossorigin=""></script>
 
     <script src="../geojson/county.geojson"></script>
-    <script src="../geojson/Loudon_Stormwater_Pipes.geojson"></script>
+    <script src="../geojson/trails.geojson"></script>
     <script src="../geojson/us_cities.geojson"></script>
     
    
@@ -47,7 +47,7 @@
         }).addTo(map);
         
         L.geoJSON(counties).addTo(map);
-        L.geoJSON(stormwater).addTo(map);
+        L.geoJSON(trails).addTo(map);
         L.geoJSON(cities).addTo(map);
 
     </script>
