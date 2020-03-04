@@ -13,9 +13,9 @@
         integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
         crossorigin=""></script>
 
-    <script src="../geojson/USA.geojson"></script>
-    <script src="../geojson/AutomatedWeatherObservingSystem.geojson"></script>
-    <script src="../geojson/USA_cities.geojson"></script>
+    <script src="../geojson/Loudon_Stormwater_Pipes.geojson"></script>
+    <script src="../geojson/us_cities.geojson"></script>
+    <script src="../geojson/county.geojson"></script>
     
    
     <!--  You can link to your geojson file using the file path (like example above) or using the full URL              
@@ -46,9 +46,9 @@
             accessToken: 'pk.eyJ1Ijoia2FobmVyY2xldmVsYW5kIiwiYSI6ImNrN2RwMThwdTIyZHEzZXA5anltd2ttdnkifQ.OVJfQuqUk096rupBRNnXWg' 
         }).addTo(map);
         
-        L.geoJSON(usa).addTo(map);
-        L.geoJSON(weatherObservingSystem).addTo(map);
-        L.geoJSON(cities).addTo(map);
+        L.geoJSON(Loudon_Stormwater_Pipes).addTo(map);
+        L.geoJSON(us_cities).addTo(map);
+        L.geoJSON(county).addTo(map);
 
         L.marker([42.00185, -93.63474]).addTo(map)
             .bindPopup("My Office Location")
