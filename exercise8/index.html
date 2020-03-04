@@ -13,7 +13,7 @@
         integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
         crossorigin=""></script>
 
-    <script src="../geojson/Loudon_Stormwater_Pipes.geojson"></script>
+    <script src="https://raw.githubusercontent.com/kahnercleveland/CRP-458/master/geojson/counties"></script>
     <script src="../geojson/us_cities.geojson"></script>
     <script src="../geojson/county.geojson"></script>
     
@@ -46,7 +46,7 @@
             accessToken: 'pk.eyJ1Ijoia2FobmVyY2xldmVsYW5kIiwiYSI6ImNrN2RwMThwdTIyZHEzZXA5anltd2ttdnkifQ.OVJfQuqUk096rupBRNnXWg' 
         }).addTo(map);
         
-        L.geoJSON(Loudon_Stormwater_Pipes).addTo(map);
+        L.geoJSON(counties).addTo(map);
         L.geoJSON(us_cities).addTo(map);
         L.geoJSON(county).addTo(map);
 
