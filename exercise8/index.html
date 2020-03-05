@@ -14,8 +14,8 @@
         crossorigin=""></script>
 
     <script src="../geojson/county.geojson"></script>
-    <script src="https://github.com/kahnercleveland/CRP-458/blob/master/geojson/VT_Green_Mountain_National_Forest__Trails.geojson"></script>
-    <script src="../geojson/us_cities.geojson"></script>
+    <script src="../geojson/VT_Road_Centerline"></script>
+    <script src="../"></script>
     
    
     <!--  You can link to your geojson file using the file path (like example above) or using the full URL              
@@ -47,7 +47,7 @@
         }).addTo(map);
         
         L.geoJSON(counties).addTo(map);
-        L.geoJSON(trails).addTo(map);
+        L.geoJSON(centerline).addTo(map);
         L.geoJSON(cities).addTo(map);
 
     </script>
