@@ -14,18 +14,14 @@
         crossorigin=""></script>
 
     <script src="../geojson/county.geojson"></script>
-    <script src="../geojson/map.geojson"></script>
-    <script src="../"></script>
-    
-   
-    <!--  You can link to your geojson file using the file path (like example above) or using the full URL              
-    <script src="https://baileyhanson.github.io/CRP558/geojson/USA.geojson"></script>
-    -->
+    <script src="../geojson/us_cities.geojson"></script>
+    <script src="../geojson/highway.geojson"></script>
     
     <style>
         #map {
             width: 700px;
             height: 500px;
+            z-index: 0;
         }
         
     </style>
@@ -47,7 +43,7 @@
         }).addTo(map);
         
         L.geoJSON(counties).addTo(map);
-       // L.geoJSON(points).addTo(map);
+        L.geoJSON(cities).addTo(map);
         L.geoJSON(cities).addTo(map);
 
     </script>
