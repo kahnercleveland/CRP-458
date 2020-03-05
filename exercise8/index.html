@@ -14,7 +14,7 @@
         crossorigin=""></script>
 
     <script src="../geojson/county.geojson"></script>
-    <script src="../geojson/VT_Road_Centerline.geojson"></script>
+    <script src="../geojson/map.geojson"></script>
     <script src="../"></script>
     
    
@@ -47,7 +47,7 @@
         }).addTo(map);
         
         L.geoJSON(counties).addTo(map);
-        L.geoJSON(centerline).addTo(map);
+        L.geoJSON(points).addTo(map);
         L.geoJSON(cities).addTo(map);
 
     </script>
