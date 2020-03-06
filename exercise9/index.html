@@ -46,7 +46,7 @@
         L.geoJSON(cities).addTo(map);
 
         // get color depending on population density value
-	function getColor(counties) {
+	function getColor(d) {
 		return counties > 5000 ? '#bd0026' :
 				d > 1000  ? '#f03b20' :
 				d > 500  ? '#fd8d3c' :
