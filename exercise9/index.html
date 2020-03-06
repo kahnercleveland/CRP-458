@@ -15,6 +15,7 @@
 
     <script src="../geojson/county.geojson"></script>
     <script src="../geojson/us_cities.geojson"></script>
+	<script src="../geojson/states.geojson"></script>
     
     <style>
         #map {
@@ -44,6 +45,7 @@
         
         L.geoJSON(counties).addTo(map);
         L.geoJSON(cities).addTo(map);
+	    L.geoJSON(states).addTo(map);
 	    
 	// get color depending on population density value
 	function getColor(d) {
