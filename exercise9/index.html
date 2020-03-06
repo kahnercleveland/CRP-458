@@ -64,7 +64,8 @@
 			fillColor: getColor(feature.properties.density)
 		};
 	}
-
+L.geoJson(counties, {style: style}).addto(map);
+	    
 	function highlightFeature(e) {
 		var layer = e.target;
 
