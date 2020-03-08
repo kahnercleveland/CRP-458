@@ -5,7 +5,7 @@
     <meta name="description" content="LA/CRP 458/558 Leaflet starter file - 2020">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Exercise 9</title>
+    <title>Exercise 10</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
         integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
         crossorigin=""/>
@@ -128,7 +128,7 @@ function style(feature) {
         dashArray: '2',
         fillOpacity: 0.7
     };
-}
+
 
 
 url = "https://profseeger.github.io/LVM-Code/data/geoJSON/iowaCounties.geojson";
@@ -141,6 +141,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(url , {
 		layer.bindTooltip(feature.properties.NAME);
     }
 }).addTo(map);
+	    }
 
     </script>
 
