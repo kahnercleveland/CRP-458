@@ -105,42 +105,7 @@
 	}).addTo(map);
 
 	map.attributionControl.addAttribution('Population data &copy; <a href="http://census.gov/">US Census Bureau</a>');
-	    //set color of marker
-function getColor(d) {
-  return d <= '1' ? '#9F0410' :
-    d <= '2' ? "#CF412E" :
-   d <= '3' ? "#F57146" :
-    d <= '4' ? "#14049F" :
-    d <= '5' ? "#253CBB" :
-  d <= '6' ? "#3B87E2" :
-  d <= '7' ? "#4DC0FF" :
-  d <= '8' ? "#7DE723" :
-  d <= '9' ? "#B1FF0F" :
-    "#FFFFFF"; //white
-}
-
-function style(feature) {
-    return {
-        fillColor: getColor(feature.properties.RUCC_2013),
-        weight: 1,
-        opacity: 1,
-        color: 'white',
-        dashArray: '2',
-        fillOpacity: 0.7
-    };
-
-
-
-url = "https://profseeger.github.io/LVM-Code/data/geoJSON/iowaCounties.geojson";
-
-var geojsonLayer = new L.GeoJSON.AJAX(url , {
-	style: style,
-	onEachFeature: function (feature, layer) {
-        htmlText = "<strong>" + feature.properties.NAME+ "</strong><br>Population 2010: <b>"  + feature.properties.POP2010 + "</b><br>Population 2000: <b>"  + feature.properties.POP2000 + "</b><br> RUCC 2013: <b>"  + feature.properties.RUCC_2013 + "</b>";
-        layer.bindPopup(htmlText);
-		layer.bindTooltip(feature.properties.NAME);
-    }
-}).addTo(map);
+	   
 	    }
 
     </script>
