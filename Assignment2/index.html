@@ -1,0 +1,168 @@
+  
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="https://kahnercleveland.github.io/CRP-458/Assignment1/#home">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://kahnercleveland.github.io/CRP-458/exercise1/#home">Exercise 1</a>
+      <a href="https://kahnercleveland.github.io/CRP-458/exercise2/#home">Exercise 2</a>
+      <a href="https://github.com/kahnercleveland/CRP-458/blob/master/exercise3/impaired_waters_geojson.geojson">Exercise 3</a>
+      <a href="https://kahnercleveland.github.io/CRP-458/exercise5/">Exercise 5</a>
+      <a href="https://kahnercleveland.github.io/CRP-458/exercise6/">Exercise 6</a>
+      <a href="https://kahnercleveland.github.io/CRP-458/exercise7/">Exercise 7</a>
+      <a href="https://kahnercleveland.github.io/CRP-458/exercise8/">Exercise 8</a>
+      <a href="https://kahnercleveland.github.io/CRP-458/exercise9/">Exercise 9</a>
+      <a href="https://kahnercleveland.github.io/CRP-458/exercise10/">Exercise 10</a>  
+    </div>
+  </div> 
+</div>
+</head>
+<body>
+  
+  
+<h2>Assignment 2</h2>
+<p id="a1"></p>
+<p id="a2"></p>
+  <p id="a3"></p>
+  <p id="a4"></p>
+  <p id="a5"></p>
+   <p id="a6"></p>
+   <p id="a7"></p>
+   <p id="a8"></p>
+  Press F12 to view the console log message.
+<script> 
+function toCelsius(f) {
+  return (5/9) * (f-32);
+}
+document.getElementById("a2").innerHTML = toCelsius(50);
+  
+var animals = [
+  "Red-Tailed Hawk",
+  "Turtle",
+  "Frog"
+];
+document.getElementById("a3").innerHTML = animals;
+  
+ // Create an object:
+var person = {firstName:"Kahner", lastName:"Cleveland", age:21, eyeColor:"blue"};
+
+// Display some data from the object:
+document.getElementById("a4").innerHTML =
+person.firstName + " is " + person.age + " years old."; 
+  
+  var text = "";
+var i;
+for (i = 0; i < 20; i++) {
+  text += "The number is " + i + "<br>";
+}
+document.getElementById("a5").innerHTML = text;
+  
+  function myFunction1() {
+  var hour = new Date().getHours(); 
+  var greeting;
+  if (hour < 16) {
+    greeting = "Have a great day";
+  } else {
+    greeting = "Have a good rest of your night";
+  }
+  document.getElementById("a6").innerHTML = greeting;
+}
+  function myFunction2() {
+  var person = prompt("Please enter your name", "Joe Brown");
+  if (person != null) {
+    document.getElementById("a7").innerHTML =
+    "Hello " + person + "! How are you today?";
+  }
+}
+   function myFunction3() {
+  var animal = prompt("Please enter your favorite animal", "whale");
+  if (animal != null) {
+    document.getElementById("a8").innerHTML =
+    animal + " is my favorite animal too!";
+  }
+}
+  console.log("Greetings!");
+  
+</script>
+
+  <button onclick="myFunction1()">Click me</button>
+  <button onclick="myFunction2()">Enter Name</button>
+  <button onclick="myFunction3()">Favorite Animal</button>
+  
+  </body>
+</html> 
