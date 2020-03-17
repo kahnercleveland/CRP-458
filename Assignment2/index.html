@@ -105,58 +105,9 @@ body {
    <p id="a8"></p>
   Press F12 to view the console log message.
 <script> 
-var animals = [
-  "Red-Tailed Hawk",
-  "Turtle",
-  "Frog"
-];
-document.getElementById("a3").innerHTML = animals;
-  
- // Create an object:
-var person = {firstName:"Kahner", lastName:"Cleveland", age:21, eyeColor:"blue"};
 
-// Display some data from the object:
-document.getElementById("a4").innerHTML =
-person.firstName + " is " + person.age + " years old."; 
-  
-  var text = "";
-var i;
-for (i = 0; i < 20; i++) {
-  text += "The number is " + i + "<br>";
-}
-document.getElementById("a5").innerHTML = text;
-  
-  function myFunction1() {
-  var hour = new Date().getHours(); 
-  var greeting;
-  if (hour < 16) {
-    greeting = "Have a great day";
-  } else {
-    greeting = "Have a good rest of your night";
-  }
-  document.getElementById("a6").innerHTML = greeting;
-}
-  function myFunction2() {
-  var person = prompt("Please enter your name", "Joe Brown");
-  if (person != null) {
-    document.getElementById("a7").innerHTML =
-    "Hello " + person + "! How are you today?";
-  }
-}
-   function myFunction3() {
-  var animal = prompt("Please enter your favorite animal", "whale");
-  if (animal != null) {
-    document.getElementById("a8").innerHTML =
-    animal + " is my favorite animal too!";
-  }
-}
-  console.log("Greetings!");
   
 </script>
-
-  <button onclick="myFunction1()">Click me</button>
-  <button onclick="myFunction2()">Enter Name</button>
-  <button onclick="myFunction3()">Favorite Animal</button>
   
   </body>
 </html> 
